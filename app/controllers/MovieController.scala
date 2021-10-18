@@ -9,15 +9,11 @@ import play.api.mvc._
 import scala.collection.mutable
 
 @Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
+class MovieController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
   private val movieList = new mutable.ListBuffer[Movie]()
   movieList += Movie("test", "France", 2006, "", "", "", List(""), 1)
   movieList += Movie("some other value", "Italy", 2008, "", "", "", List(""), 2)
-
-  def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
-  }
 
   implicit val movieFormatter: OFormat[Movie] = Json.format[Movie]
 
