@@ -170,9 +170,3 @@ List movies by matched genre :
 Count movies by year of production :
 ```
 ![image](https://user-images.githubusercontent.com/32568108/138506968-006a9ab3-48bd-4465-a762-25a19bf3eeba.png)
-
-
-
-
-
-
