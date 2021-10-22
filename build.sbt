@@ -15,3 +15,10 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0
 
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
+
+// https://mvnrepository.com/artifact/org.apache.spark/spark-core
+// https://mvnrepository.com/artifact/org.apache.spark/spark-core
+libraryDependencies += "org.apache.spark" %% "spark-core" % "3.2.0"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.2.0"
+
+libraryDependencies += "org.apache.spark" %% "spark-hive" % "3.2.0"
