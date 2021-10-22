@@ -28,11 +28,11 @@ In this application rather than use a memory storage, we’ll store the movies l
 
 The application provide several endpoints (list, add, getByGenre, computeByYear)
 
-#### 2.1. Setup the Project***
+#### 2.1. Setup the Project
 
 <code> > sbt new playframework/play-scala-seed.g8 </code>
 
-#### 2.2. Create a Controller***
+#### 2.2. Create a Controller
 
 I created a controller class in the app/controllers directory.
 
