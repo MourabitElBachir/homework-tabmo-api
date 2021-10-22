@@ -6,7 +6,7 @@
 POST         /add              controllers.MovieController.addNewMovie
 
 GET         /movies/:genre    controllers.MovieController.SearchByGenre(genre: String)
-GET         /list             controllers.MovieController.list
+GET         /movies           controllers.MovieController.list
 GET         /compute          controllers.MovieController.countByYear
 
 # Map static resources from the /public folder to the /assets URL path
