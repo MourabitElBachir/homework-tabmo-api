@@ -3,7 +3,11 @@
 # https://www.playframework.com/documentation/latest/ScalaRouting
 # ~~~~
 
-POST  /add  controllers.MovieController.addNewMovie
+POST         /add              controllers.MovieController.addNewMovie
+
+GET         /movies/:genre    controllers.MovieController.SearchByGenre(genre: String)
+GET         /list             controllers.MovieController.list
+GET         /compute          controllers.MovieController.countByYear
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET         /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
